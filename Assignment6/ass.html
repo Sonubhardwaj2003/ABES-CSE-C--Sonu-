@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let a=2;
+        let b=3;
+        let arrEven=[];
+        let arrOdd=[];
+        for(let i=1;i<=10;i++){
+            document.write(a*i," ");
+            if(a*i%2==0){
+                arrEven.push(a*i);
+            }else{
+                arrOdd.push(a*i);
+            }
+        }
+        document.write("<br>")
+        for(let i=1;i<=10;i++){
+            document.write(b*i,"  ");
+            if(b*i%2==0){
+                arrEven.push(b*i);
+            }else{
+                arrOdd.push(b*i);
+            }
+        }
+
+        document.write("<br>Even : ")
+        arrEven.forEach(num=>document.write(num,"  "))
+
+        document.write("<br>Odd : ")
+        arrOdd.forEach(num=>document.write(num,"  "))
+        
+    </script>
+</body>
+</html>
